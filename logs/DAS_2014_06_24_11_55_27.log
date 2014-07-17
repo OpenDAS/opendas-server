@@ -1,7 +1,0 @@
-MessageReceiver: Sujet = 'getChaineParser' or Sujet = 'insertLot' or Sujet = 'insertMvt' or Sujet = 'getWorkstationWithId' or Sujet = 'getGraphConfigsWithWsId' or Sujet = 'getBalancesWithWs' or Sujet = 'getLotWithSSCC' or Sujet = 'getProductsWithComingFrom' or Sujet = 'getProductWithId' or Sujet = 'getWsGenericsWithId' or Sujet = 'getWsGenericsWithIdOrWithout' or Sujet = 'getWsArticlesWithId' or Sujet = 'getDependsWithParentsAndDM' or Sujet = 'getDataModelWithId' or Sujet = 'getSubjectList' or Sujet = 'getFctConfigsWithWsId' or Sujet = 'getAcquisitionMethodWithId' or Sujet = 'getWsSsccWithId' or Sujet = 'getListDataModel' or Sujet = 'getListEan128' or Sujet = 'getListTemplateReport' or Sujet = 'getListTemplateSupervision' or Sujet = 'getWsConfig_workstationID'
-MessageReceiver: LISTENER SETTED
-MessageReceiver: Connecting receiver to URL: tcp://127.0.0.1:61616
-MessageReceiver: Consuming queue : DAS_SERVER
-MessageSender: Connecting sender to URL: tcp://127.0.0.1:61616
-MessageSender: Using persistent messages and queue
-Start: OpenDAS Server starts with default configuration file: ./config/das_server.conf

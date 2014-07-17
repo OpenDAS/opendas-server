@@ -1,3 +1,0 @@
-ServerLog: Start: OpenDAS Server starts with default configuration file: ./config/das_server.conf
-MessageController: Sujet = getSubjectList
-MessageController: Message recu : ServerRequest [attachement=null, fromUrl=TALEND, sendUrl=DAS_SERVER, title=getSubjectList, sendedDate=Wed Oct 09 15:03:13 CEST 2013, previousRequest=null]

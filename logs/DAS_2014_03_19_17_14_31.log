@@ -1,9 +1,0 @@
-MessageController: Subject = getSubjectList
-ServerLog: Start: OpenDAS Server starts with configuration file: config/das_server.conf
-MessageController: Message received : ServerRequest [attachement=null, fromUrl=TALEND_DEMO, sendUrl=DAS_SERVER, title=getSubjectList, sendedDate=Wed Mar 19 17:13:55 CET 2014, previousRequest=null]
-MessageController: Subject = getSubjectList
-MessageController: Message received : ServerRequest [attachement=null, fromUrl=TALEND_DEMO, sendUrl=DAS_SERVER, title=getSubjectList, sendedDate=Wed Mar 19 17:13:57 CET 2014, previousRequest=null]
-MessageController: Subject = getSubjectList
-MessageController: Message received : ServerRequest [attachement=null, fromUrl=TALEND, sendUrl=DAS_SERVER, title=getSubjectList, sendedDate=Wed Mar 19 17:14:01 CET 2014, previousRequest=null]
-MessageController: Subject = getSubjectList
-MessageController: Message received : ServerRequest [attachement=null, fromUrl=TALEND, sendUrl=DAS_SERVER, title=getSubjectList, sendedDate=Wed Mar 19 17:14:02 CET 2014, previousRequest=null]

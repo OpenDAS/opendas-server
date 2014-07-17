@@ -1,3 +1,0 @@
-MessageController: Sujet = getSubjectList
-MessageController: Message recu : ServerRequest [attachement=null, fromUrl=TALEND, sendUrl=DAS_SERVER, title=getSubjectList, sendedDate=Wed Sep 11 14:49:00 CEST 2013, previousRequest=null]
-ServerLog: Start: Démarrage avec le fichier de configuration config/das_server.conf
