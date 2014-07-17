@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="das_server" default="jars">
+
+    <property name="version" value="1"/>
+    <property name="src.dir" value="${basedir}/src"/>
+    <property name="build.dir" value="${basedir}/bin"/>
+    <property name="build.classes.dir" value="${build.dir}"/>
+    <property name="build.jars.dir" value="${build.dir}"/>
+	<property name="build.lib.dir" value="${build.dir}/lib"/>
+    <property name="lib.dir" value="${basedir}/lib"/>
+	
+    <path id="build.classpath">
+        <fileset dir="${build.lib.dir}">
+            <include name="activemq-all-5.5.0.jar"/>
+            <include name="activemq-core-5.5.0.jar"/>
+            <include name="postgresql-8.4-701.jdbc4.jar"/>
+            <include name="toplink-essentials-agent.jar"/>
+            <include name="toplink-essentials.jar"/>
+        	<include name="log4j-over-slf4j-1.5.4.jar"/>
+        	<include name="slf4j-simple-1.5.4.jar"/>
+        </fileset>
+    </path>
+	
+	<target name="prepare">
+		<mkdir dir="${build.jars.dir}"/>
+        <mkdir dir="${build.lib.dir}"/>
+		<mkdir dir="${build.dir}/META-INF"/>
+        <copy file="${lib.dir}/activemq-all-5.5.0.jar" todir="${build.lib.dir}"/>
+        <copy file="${lib.dir}/activemq-core-5.5.0.jar" todir="${build.lib.dir}"/>
+		<copy file="${lib.dir}/log4j-over-slf4j-1.5.4.jar" todir="${build.lib.dir}"/>
+		<copy file="${lib.dir}/slf4j-simple-1.5.4.jar" todir="${build.lib.dir}"/>
+        <copy file="${lib.dir}/postgresql-8.4-701.jdbc4.jar" todir="${build.lib.dir}"/>
+        <copy file="${lib.dir}/toplink-essentials.jar" todir="${build.lib.dir}"/>
+        <copy file="${lib.dir}/toplink-essentials-agent.jar" todir="${build.lib.dir}"/>
+		<copy file="${src.dir}/META-INF/MANIFEST.MF" todir="${build.dir}/META-INF"/>
+    	<copy file="${src.dir}/META-INF/persistence.xml" todir="${build.dir}/META-INF"/>
+	
+	</target>
+		
+    <target name="compile" depends="prepare">
+        <mkdir dir="${build.classes.dir}"/>
+        <javac srcdir="${src.dir}" destdir="${build.classes.dir}" classpathref="build.classpath" includeantruntime="false" source="5" target="5"/>
+    </target>
+	
+    <target name="jars" depends="compile">
+        <jar jarfile="${build.jars.dir}/das_server.jar">
+            <fileset dir="${build.classes.dir}">
+                <include name="**/*.class"/>
+            </fileset>
+            <manifest>
+                <attribute name="Main-Class" value="org.opendas.server.Start"/>
+                <attribute name="Class-Path" value=". lib/activemq-all-5.5.0.jar lib/activemq-core-5.5.0.jar lib/log4j-over-slf4j-1.5.4.jar lib/slf4j-simple-1.5.4.jar lib/postgresql-8.4-701.jdbc4.jar lib/toplink-essentials.jar lib/toplink-essentials-agent.jar "/>
+            </manifest>
+        </jar>
+    </target>
+
+</project>

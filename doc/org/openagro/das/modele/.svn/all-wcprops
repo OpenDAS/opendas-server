@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/openagro/das/modele
+END
+DASConfigMaterial.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/openagro/das/modele/DASConfigMaterial.html
+END
+DASWorkstation.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/openagro/das/modele/DASWorkstation.html
+END
+DASFoodCategory.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/openagro/das/modele/DASFoodCategory.html
+END
+DASBalance.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/openagro/das/modele/DASBalance.html
+END
+ServerRequest.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/openagro/das/modele/ServerRequest.html
+END
+WsConfig.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/openagro/das/modele/WsConfig.html
+END
+DASFunctionalConfig.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/openagro/das/modele/DASFunctionalConfig.html
+END
+DASWorkstationArticle.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/openagro/das/modele/DASWorkstationArticle.html
+END
+DASDataModel.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/openagro/das/modele/DASDataModel.html
+END
+DASSscc.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/openagro/das/modele/DASSscc.html
+END
+package-frame.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/openagro/das/modele/package-frame.html
+END
+package-use.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/openagro/das/modele/package-use.html
+END
+DASLot.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/openagro/das/modele/DASLot.html
+END
+package-summary.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/openagro/das/modele/package-summary.html
+END
+DASDialog.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/openagro/das/modele/DASDialog.html
+END
+DASTypeMaterial.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/openagro/das/modele/DASTypeMaterial.html
+END
+package-tree.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/openagro/das/modele/package-tree.html
+END
+DASMvt.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/openagro/das/modele/DASMvt.html
+END
+DASCodeDependency.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/openagro/das/modele/DASCodeDependency.html
+END
+EAN128Identifier.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/openagro/das/modele/EAN128Identifier.html
+END
+DASGeneric.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/openagro/das/modele/DASGeneric.html
+END
+DASModelMaterial.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/openagro/das/modele/DASModelMaterial.html
+END
+DASLabel.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/openagro/das/modele/DASLabel.html
+END
+DASGraphicalConfig.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/openagro/das/modele/DASGraphicalConfig.html
+END
+DASConsumerConfig.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/openagro/das/modele/DASConsumerConfig.html
+END
+DASArticle.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/openagro/das/modele/DASArticle.html
+END
+DASTransmitProtocol.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/openagro/das/modele/DASTransmitProtocol.html
+END

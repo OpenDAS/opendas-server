@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/opendas/!svn/ver/124/server/trunk/src/org/opendas/modele
+END
+DASTemplateReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/opendas/!svn/ver/486/server/trunk/src/org/opendas/modele/DASTemplateReport.java
+END
+DASGeneric.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/opendas/!svn/ver/486/server/trunk/src/org/opendas/modele/DASGeneric.java
+END
+DASLabel.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opendas/!svn/ver/486/server/trunk/src/org/opendas/modele/DASLabel.java
+END
+DASGraphicalConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/opendas/!svn/ver/486/server/trunk/src/org/opendas/modele/DASGraphicalConfig.java
+END
+DASConsumerConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/opendas/!svn/ver/486/server/trunk/src/org/opendas/modele/DASConsumerConfig.java
+END
+DASTemplateSupervision.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/opendas/!svn/ver/486/server/trunk/src/org/opendas/modele/DASTemplateSupervision.java
+END
+DASTransmitProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/opendas/!svn/ver/486/server/trunk/src/org/opendas/modele/DASTransmitProtocol.java
+END
+DASConfigMaterial.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/opendas/!svn/ver/486/server/trunk/src/org/opendas/modele/DASConfigMaterial.java
+END
+DASWorkstation.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/opendas/!svn/ver/486/server/trunk/src/org/opendas/modele/DASWorkstation.java
+END
+DASTypeTransmitProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/opendas/!svn/ver/287/server/trunk/src/org/opendas/modele/DASTypeTransmitProtocol.java
+END
+DASConfigTypeMaterial.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/opendas/!svn/ver/519/server/trunk/src/org/opendas/modele/DASConfigTypeMaterial.java
+END
+DASTypeWorkstation.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/opendas/!svn/ver/486/server/trunk/src/org/opendas/modele/DASTypeWorkstation.java
+END
+WsConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opendas/!svn/ver/486/server/trunk/src/org/opendas/modele/WsConfig.java
+END
+ServerRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/opendas/!svn/ver/486/server/trunk/src/org/opendas/modele/ServerRequest.java
+END
+DASFunctionalConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/opendas/!svn/ver/486/server/trunk/src/org/opendas/modele/DASFunctionalConfig.java
+END
+DASError.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/opendas/!svn/ver/486/server/trunk/src/org/opendas/modele/DASError.java
+END
+DASAcquisitionMethod.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/opendas/!svn/ver/486/server/trunk/src/org/opendas/modele/DASAcquisitionMethod.java
+END
+DASDataModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/opendas/!svn/ver/486/server/trunk/src/org/opendas/modele/DASDataModel.java
+END
+DASEan128.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opendas/!svn/ver/486/server/trunk/src/org/opendas/modele/DASEan128.java
+END
+DASMaterial.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/opendas/!svn/ver/505/server/trunk/src/org/opendas/modele/DASMaterial.java
+END
+DASDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/opendas/!svn/ver/486/server/trunk/src/org/opendas/modele/DASDialog.java
+END
+DASTypeMaterial.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/opendas/!svn/ver/486/server/trunk/src/org/opendas/modele/DASTypeMaterial.java
+END

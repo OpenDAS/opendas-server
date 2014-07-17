@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/opendas/modele/class-use
+END
+DASConfigMaterial.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/opendas/modele/class-use/DASConfigMaterial.html
+END
+DASWorkstation.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/opendas/modele/class-use/DASWorkstation.html
+END
+DASTypeWorkstation.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/opendas/modele/class-use/DASTypeWorkstation.html
+END
+DASConfigTypeMaterial.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/opendas/modele/class-use/DASConfigTypeMaterial.html
+END
+ServerRequest.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/opendas/modele/class-use/ServerRequest.html
+END
+WsConfig.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/opendas/modele/class-use/WsConfig.html
+END
+DASFunctionalConfig.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/opendas/modele/class-use/DASFunctionalConfig.html
+END
+DASAcquisitionMethod.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/opendas/modele/class-use/DASAcquisitionMethod.html
+END
+DASDataModel.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/opendas/modele/class-use/DASDataModel.html
+END
+DASMaterial.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/opendas/modele/class-use/DASMaterial.html
+END
+DASDialog.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/opendas/modele/class-use/DASDialog.html
+END
+DASTypeMaterial.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/opendas/modele/class-use/DASTypeMaterial.html
+END
+DASCodeDependency.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/opendas/modele/class-use/DASCodeDependency.html
+END
+DASGeneric.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/opendas/modele/class-use/DASGeneric.html
+END
+DASModelMaterial.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/opendas/modele/class-use/DASModelMaterial.html
+END
+DASLabel.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/opendas/modele/class-use/DASLabel.html
+END
+DASGraphicalConfig.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/opendas/modele/class-use/DASGraphicalConfig.html
+END
+DASConsumerConfig.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/opendas/modele/class-use/DASConsumerConfig.html
+END
+DASTransmitProtocol.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/opendas/!svn/ver/5/server/trunk/doc/org/opendas/modele/class-use/DASTransmitProtocol.html
+END

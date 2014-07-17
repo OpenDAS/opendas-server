@@ -1,0 +1,3 @@
+org.opendas.ext.DASConnexion: APPEL GET INSTANCE :: DASCONNEXION
+org.opendas.ext.DASConnexion: APPEL GET INSTANCE :: DASCONNEXION
+ServerLog: Start: OpenDAS Server starts with configuration file: config/das_server.conf

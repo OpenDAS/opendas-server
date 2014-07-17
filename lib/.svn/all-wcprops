@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/opendas/!svn/ver/111/server/trunk/lib
+END
+postgresql-8.4-701.jdbc4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opendas/!svn/ver/5/server/trunk/lib/postgresql-8.4-701.jdbc4.jar
+END
+toplink-essentials-agent.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/opendas/!svn/ver/5/server/trunk/lib/toplink-essentials-agent.jar
+END
+toplink-essentials.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/opendas/!svn/ver/5/server/trunk/lib/toplink-essentials.jar
+END
+jms.jar
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/opendas/!svn/ver/285/server/trunk/lib/jms.jar
+END
+log4j-1.2.14.jar
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/opendas/!svn/ver/111/server/trunk/lib/log4j-1.2.14.jar
+END
+activemq-all-5.5.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/opendas/!svn/ver/365/server/trunk/lib/activemq-all-5.5.0.jar
+END
+activemq-core-5.5.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/opendas/!svn/ver/365/server/trunk/lib/activemq-core-5.5.0.jar
+END
+slf4j-log4j12-1.5.11.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/opendas/!svn/ver/111/server/trunk/lib/slf4j-log4j12-1.5.11.jar
+END

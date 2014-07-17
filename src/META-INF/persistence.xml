@@ -1,0 +1,40 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+    http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+	version="1.0">
+
+	<persistence-unit name="DAS">
+		<class>org.opendas.modele.DASAcquisitionMethod</class>
+		<class>org.opendas.modele.DASConfigMaterial</class>
+		<class>org.opendas.modele.DASTypeTransmitProtocol</class>
+		<class>org.opendas.modele.DASConfigTypeMaterial</class>
+		<class>org.opendas.modele.DASConsumerConfig</class>
+		<class>org.opendas.modele.DASDataModel</class>
+		<class>org.opendas.modele.DASDialog</class>
+		<class>org.opendas.modele.DASFunctionalConfig</class>
+		<class>org.opendas.modele.DASGeneric</class>
+		<class>org.opendas.modele.DASGraphicalConfig</class>
+		<class>org.opendas.modele.DASLabel</class>
+		<class>org.opendas.modele.DASEan128</class>
+		<class>org.opendas.modele.DASMaterial</class>
+		<class>org.opendas.modele.DASModelMaterial</class>
+		<class>org.opendas.modele.DASTemplateReport</class>
+		<class>org.opendas.modele.DASTemplateSupervision</class>
+		<class>org.opendas.modele.DASTransmitProtocol</class>
+		<class>org.opendas.modele.DASTypeMaterial</class>
+		<class>org.opendas.modele.DASTypeWorkstation</class>
+		<class>org.opendas.modele.DASWorkstation</class>
+
+		<properties>
+			<property name="toplink.logging.level" value="INFO" />
+			<property name="toplink.jdbc.driver" value="org.postgresql.Driver" />
+			<property name="toplink.jdbc.url" value="jdbc:postgresql://127.0.0.1:5432/opendas_config" />
+			<property name="toplink.jdbc.user" value="opendas" />
+			<property name="toplink.jdbc.password" value="opendas" />	
+			<property name="toplink.ddl-generation"	value="none" />
+		</properties>
+		
+	</persistence-unit>
+	
+</persistence>

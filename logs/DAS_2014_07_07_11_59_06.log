@@ -1,0 +1,408 @@
+DASConnexion: APPEL GET INSTANCE :: DASCONNEXION
+MessageReceiver: Sujet = 'getChaineParser' or Sujet = 'insertLot' or Sujet = 'insertMvt' or Sujet = 'getWorkstationWithId' or Sujet = 'getGraphConfigsWithWsId' or Sujet = 'getBalancesWithWs' or Sujet = 'getLotWithSSCC' or Sujet = 'getProductsWithComingFrom' or Sujet = 'getProductWithId' or Sujet = 'getWsGenericsWithId' or Sujet = 'getWsGenericsWithIdOrWithout' or Sujet = 'getWsArticlesWithId' or Sujet = 'getDependsWithParentsAndDM' or Sujet = 'getDataModelWithId' or Sujet = 'getSubjectList' or Sujet = 'getFctConfigsWithWsId' or Sujet = 'getAcquisitionMethodWithId' or Sujet = 'getWsSsccWithId' or Sujet = 'getListDataModel' or Sujet = 'getListEan128' or Sujet = 'getListTemplateReport' or Sujet = 'getListTemplateSupervision' or Sujet = 'getWsConfig_workstationID'
+DASConnexion: APPEL GET INSTANCE :: DASCONNEXION
+MessageReceiver: LISTENER SETTED
+MessageReceiver: Connecting receiver to URL: tcp://127.0.0.1:61616
+MessageReceiver: Consuming queue : DAS_SERVER
+MessageSender: Connecting sender to URL: tcp://127.0.0.1:61616
+MessageSender: Using persistent messages and queue
+Start: OpenDAS Server starts with configuration file: config/das_server.conf
+MessageController: Passage by onMessage
+MessageController :: Passage par route Message :ActiveMQObjectMessage {commandId = 5, responseRequired = false, messageId = ID:opendas-vm-44187-1404727154132-0:0:1:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-44187-1404727154132-0:0:1:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 0, timestamp = 1404727154414, arrival = 0, brokerInTime = 1404727154414, brokerOutTime = 1404727154414, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@14a7a12, marshalledProperties = org.apache.activemq.util.ByteSequence@9444d1, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=GET, Sujet=getSubjectList}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Subject = getSubjectList
+MessageController :: Passage par route ObjectMessage :ActiveMQObjectMessage {commandId = 5, responseRequired = false, messageId = ID:opendas-vm-44187-1404727154132-0:0:1:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-44187-1404727154132-0:0:1:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 0, timestamp = 1404727154414, arrival = 0, brokerInTime = 1404727154414, brokerOutTime = 1404727154414, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@14a7a12, marshalledProperties = org.apache.activemq.util.ByteSequence@9444d1, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=GET, Sujet=getSubjectList}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Message received : ServerRequest [attachement=null, fromUrl=TALEND, sendUrl=DAS_SERVER, title=getSubjectList, sendedDate=Mon Jul 07 11:59:14 CEST 2014, previousRequest=null]
+MessageController: TITLE ====>getSubjectList
+MessageController :: ConsumConfig :getWsGenericsExt
+MessageController :: ConsumConfig :groups
+MessageSender: Message send having for subject: GET
+MessageSender: Sending message: ServerRequest [attachement=[getWsGenericsExt, groups], fromUrl=DAS_SERVER, sendUrl=TALEND, title=null, sendedDate=Mon Ju...
+MessageController: Passage by onMessage
+MessageController :: Passage par route Message :ActiveMQObjectMessage {commandId = 38, responseRequired = false, messageId = ID:opendas-vm-54933-1404727026141-0:2:12:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-54933-1404727026141-0:2:12:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 1404727161240, timestamp = 1404727160940, arrival = 0, brokerInTime = 1404727160940, brokerOutTime = 1404727160941, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@1a8773c, marshalledProperties = org.apache.activemq.util.ByteSequence@12c3327, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=WS1_pointage, Sujet=getDataModelWithId}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Subject = getDataModelWithId
+MessageController :: Passage par route ObjectMessage :ActiveMQObjectMessage {commandId = 38, responseRequired = false, messageId = ID:opendas-vm-54933-1404727026141-0:2:12:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-54933-1404727026141-0:2:12:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 1404727161240, timestamp = 1404727160940, arrival = 0, brokerInTime = 1404727160940, brokerOutTime = 1404727160941, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@1a8773c, marshalledProperties = org.apache.activemq.util.ByteSequence@12c3327, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=WS1_pointage, Sujet=getDataModelWithId}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Message received : ServerRequest [attachement=groups, fromUrl=DAS_CLIENT, sendUrl=DAS_SERVER, title=getDataModelWithId, sendedDate=Mon Jul 07 11:59:20 CEST 2014, previousRequest=null]
+MessageController: TITLE ====>getDataModelWithId
+MessageSender: Message send having for subject: WS1_pointage
+MessageSender: Sending message: ServerRequest [attachement=DASDataModel [id=72, name=groups, source=das_generic, ctrl=null, type=D, fct_name=null, type_...
+MessageController: Passage by onMessage
+MessageController :: Passage par route Message :ActiveMQObjectMessage {commandId = 44, responseRequired = false, messageId = ID:opendas-vm-54933-1404727026141-0:2:14:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-54933-1404727026141-0:2:14:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 1404727161639, timestamp = 1404727161339, arrival = 0, brokerInTime = 1404727161340, brokerOutTime = 1404727161340, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@a2220f, marshalledProperties = org.apache.activemq.util.ByteSequence@6a3960, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=WS1_pointage, Sujet=getListTemplateReport}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Subject = getListTemplateReport
+MessageController :: Passage par route ObjectMessage :ActiveMQObjectMessage {commandId = 44, responseRequired = false, messageId = ID:opendas-vm-54933-1404727026141-0:2:14:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-54933-1404727026141-0:2:14:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 1404727161639, timestamp = 1404727161339, arrival = 0, brokerInTime = 1404727161340, brokerOutTime = 1404727161340, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@a2220f, marshalledProperties = org.apache.activemq.util.ByteSequence@6a3960, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=WS1_pointage, Sujet=getListTemplateReport}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Message received : ServerRequest [attachement=null, fromUrl=DAS_CLIENT, sendUrl=DAS_SERVER, title=getListTemplateReport, sendedDate=Mon Jul 07 11:59:21 CEST 2014, previousRequest=null]
+MessageController: TITLE ====>getListTemplateReport
+DASConnexion:  ===== GETLTP
+DASConnexion:  ===== : [DASDataModel [id=1, name=report5, template=<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<parameter name="NOM_MORCEAU" class="java.lang.String"/>
+	<parameter name="NUM_SSCC" class="java.lang.String"/>
+	<parameter name="NUM_ARTICLE" class="java.lang.Integer"/>
+	<parameter name="NUM_LOT" class="java.lang.String"/>
+	
+	<title>
+		<band height="802" splitType="Prevent">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="20"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Boucherie Factice OpenAgro - 9 rue Alfred Kastler - 44300 Nantes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="179" width="142" height="18"/>
+				<box rightPadding="0"/>
+				<textElement textAlignment="Right">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Date d'emballage :]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Opaque" x="0" y="83" width="555" height="20" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Code Article : " + $P{NUM_ARTICLE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="205" y="179" width="370" height="18"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="197" width="142" height="18"/>
+				<box rightPadding="0"/>
+				<textElement textAlignment="Right">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[N° Sanitel :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="205" y="197" width="370" height="18"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{NUM_LOT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="63" width="555" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{NOM_MORCEAU}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement mode="Opaque" x="117" y="116" width="396" height="49"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39 (Extended)" drawText="true" checksumRequired="false" evaluationTime="Report">
+					<jr:codeExpression><![CDATA[$P{NUM_SSCC}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<image>
+				<reportElement mode="Transparent" x="0" y="20" width="142" height="63"/>
+				<imageExpression class="java.lang.String"><![CDATA[System.getProperty("user.dir")+"/ressources/openAgro5a_p.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="417" y="20" width="138" height="63"/>
+				<imageExpression class="java.lang.String"><![CDATA[System.getProperty("user.dir")+"/ressources/logo_EVA.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+</jasperReport>]]
+MessageSender: Message send having for subject: WS1_pointage
+MessageSender: Sending message: ServerRequest [attachement=[DASDataModel [id=1, name=report5, template=<?xml version="1.0" encoding="UTF-8"?>
+<jasperRe...
+MessageController: Passage by onMessage
+MessageController :: Passage par route Message :ActiveMQObjectMessage {commandId = 47, responseRequired = false, messageId = ID:opendas-vm-54933-1404727026141-0:2:15:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-54933-1404727026141-0:2:15:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 1404727161751, timestamp = 1404727161451, arrival = 0, brokerInTime = 1404727161452, brokerOutTime = 1404727161452, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@15983b7, marshalledProperties = org.apache.activemq.util.ByteSequence@1d6747b, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=WS1_pointage, Sujet=getListTemplateSupervision}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Subject = getListTemplateSupervision
+MessageController :: Passage par route ObjectMessage :ActiveMQObjectMessage {commandId = 47, responseRequired = false, messageId = ID:opendas-vm-54933-1404727026141-0:2:15:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-54933-1404727026141-0:2:15:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 1404727161751, timestamp = 1404727161451, arrival = 0, brokerInTime = 1404727161452, brokerOutTime = 1404727161452, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@15983b7, marshalledProperties = org.apache.activemq.util.ByteSequence@1d6747b, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=WS1_pointage, Sujet=getListTemplateSupervision}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Message received : ServerRequest [attachement=null, fromUrl=DAS_CLIENT, sendUrl=DAS_SERVER, title=getListTemplateSupervision, sendedDate=Mon Jul 07 11:59:21 CEST 2014, previousRequest=null]
+MessageController: TITLE ====>getListTemplateSupervision
+DASConnexion:  ===== GETLTS
+DASConnexion:  ===== : []
+MessageSender: Message send having for subject: WS1_pointage
+MessageSender: Sending message: ServerRequest [attachement=[], fromUrl=DAS_SERVER, sendUrl=DAS_CLIENT, title=null, sendedDate=Mon Jul 07 11:59:21 CEST 2...
+MessageController: Passage by onMessage
+MessageController :: Passage par route Message :ActiveMQObjectMessage {commandId = 50, responseRequired = false, messageId = ID:opendas-vm-54933-1404727026141-0:2:16:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-54933-1404727026141-0:2:16:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 1404727161868, timestamp = 1404727161568, arrival = 0, brokerInTime = 1404727161568, brokerOutTime = 1404727161568, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@1684706, marshalledProperties = org.apache.activemq.util.ByteSequence@10efd7c, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=WS1_pointage, Sujet=getListEan128}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Subject = getListEan128
+MessageController :: Passage par route ObjectMessage :ActiveMQObjectMessage {commandId = 50, responseRequired = false, messageId = ID:opendas-vm-54933-1404727026141-0:2:16:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-54933-1404727026141-0:2:16:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 1404727161868, timestamp = 1404727161568, arrival = 0, brokerInTime = 1404727161568, brokerOutTime = 1404727161568, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@1684706, marshalledProperties = org.apache.activemq.util.ByteSequence@10efd7c, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=WS1_pointage, Sujet=getListEan128}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Message received : ServerRequest [attachement=null, fromUrl=DAS_CLIENT, sendUrl=DAS_SERVER, title=getListEan128, sendedDate=Mon Jul 07 11:59:21 CEST 2014, previousRequest=null]
+MessageController: TITLE ====>getListEan128
+MessageSender: Message send having for subject: WS1_pointage
+MessageSender: Sending message: ServerRequest [attachement=[], fromUrl=DAS_SERVER, sendUrl=DAS_CLIENT, title=null, sendedDate=Mon Jul 07 11:59:21 CEST 2...
+MessageController: Passage by onMessage
+MessageController :: Passage par route Message :ActiveMQObjectMessage {commandId = 53, responseRequired = false, messageId = ID:opendas-vm-54933-1404727026141-0:2:17:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-54933-1404727026141-0:2:17:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 1404727161980, timestamp = 1404727161680, arrival = 0, brokerInTime = 1404727161682, brokerOutTime = 1404727161682, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@5f2db0, marshalledProperties = org.apache.activemq.util.ByteSequence@b0a3f5, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=WS1_pointage, Sujet=getFctConfigsWithWsId}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Subject = getFctConfigsWithWsId
+MessageController :: Passage par route ObjectMessage :ActiveMQObjectMessage {commandId = 53, responseRequired = false, messageId = ID:opendas-vm-54933-1404727026141-0:2:17:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-54933-1404727026141-0:2:17:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 1404727161980, timestamp = 1404727161680, arrival = 0, brokerInTime = 1404727161682, brokerOutTime = 1404727161682, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@5f2db0, marshalledProperties = org.apache.activemq.util.ByteSequence@b0a3f5, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=WS1_pointage, Sujet=getFctConfigsWithWsId}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Message received : ServerRequest [attachement=1, fromUrl=DAS_CLIENT, sendUrl=DAS_SERVER, title=getFctConfigsWithWsId, sendedDate=Mon Jul 07 11:59:21 CEST 2014, previousRequest=null]
+MessageController: TITLE ====>getFctConfigsWithWsId
+DASConnexion :: getFctConfigs :1
+MessageSender: Message send having for subject: WS1_pointage
+MessageSender: Sending message: ServerRequest [attachement=[DASFunctionalConfig [mask=pointage, function_xml=<?xml version="1.0" encoding="UTF-8"?>
+<fu...
+MessageController: Passage by onMessage
+MessageController :: Passage par route Message :ActiveMQObjectMessage {commandId = 56, responseRequired = false, messageId = ID:opendas-vm-54933-1404727026141-0:2:18:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-54933-1404727026141-0:2:18:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 1404727162160, timestamp = 1404727161860, arrival = 0, brokerInTime = 1404727161860, brokerOutTime = 1404727161860, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@1d8d39f, marshalledProperties = org.apache.activemq.util.ByteSequence@2d95b3, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=WS1_pointage, Sujet=getListTemplateReport}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Subject = getListTemplateReport
+MessageController :: Passage par route ObjectMessage :ActiveMQObjectMessage {commandId = 56, responseRequired = false, messageId = ID:opendas-vm-54933-1404727026141-0:2:18:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-54933-1404727026141-0:2:18:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 1404727162160, timestamp = 1404727161860, arrival = 0, brokerInTime = 1404727161860, brokerOutTime = 1404727161860, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@1d8d39f, marshalledProperties = org.apache.activemq.util.ByteSequence@2d95b3, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=WS1_pointage, Sujet=getListTemplateReport}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Message received : ServerRequest [attachement=null, fromUrl=DAS_CLIENT, sendUrl=DAS_SERVER, title=getListTemplateReport, sendedDate=Mon Jul 07 11:59:21 CEST 2014, previousRequest=null]
+MessageController: TITLE ====>getListTemplateReport
+DASConnexion:  ===== GETLTP
+DASConnexion:  ===== : [DASDataModel [id=1, name=report5, template=<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<parameter name="NOM_MORCEAU" class="java.lang.String"/>
+	<parameter name="NUM_SSCC" class="java.lang.String"/>
+	<parameter name="NUM_ARTICLE" class="java.lang.Integer"/>
+	<parameter name="NUM_LOT" class="java.lang.String"/>
+	
+	<title>
+		<band height="802" splitType="Prevent">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="20"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Boucherie Factice OpenAgro - 9 rue Alfred Kastler - 44300 Nantes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="179" width="142" height="18"/>
+				<box rightPadding="0"/>
+				<textElement textAlignment="Right">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Date d'emballage :]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Opaque" x="0" y="83" width="555" height="20" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Code Article : " + $P{NUM_ARTICLE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="205" y="179" width="370" height="18"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="197" width="142" height="18"/>
+				<box rightPadding="0"/>
+				<textElement textAlignment="Right">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[N° Sanitel :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="205" y="197" width="370" height="18"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{NUM_LOT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="63" width="555" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{NOM_MORCEAU}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement mode="Opaque" x="117" y="116" width="396" height="49"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39 (Extended)" drawText="true" checksumRequired="false" evaluationTime="Report">
+					<jr:codeExpression><![CDATA[$P{NUM_SSCC}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<image>
+				<reportElement mode="Transparent" x="0" y="20" width="142" height="63"/>
+				<imageExpression class="java.lang.String"><![CDATA[System.getProperty("user.dir")+"/ressources/openAgro5a_p.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="417" y="20" width="138" height="63"/>
+				<imageExpression class="java.lang.String"><![CDATA[System.getProperty("user.dir")+"/ressources/logo_EVA.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+</jasperReport>]]
+MessageSender: Message send having for subject: WS1_pointage
+MessageSender: Sending message: ServerRequest [attachement=[DASDataModel [id=1, name=report5, template=<?xml version="1.0" encoding="UTF-8"?>
+<jasperRe...
+MessageController: Passage by onMessage
+MessageController :: Passage par route Message :ActiveMQObjectMessage {commandId = 59, responseRequired = false, messageId = ID:opendas-vm-54933-1404727026141-0:2:19:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-54933-1404727026141-0:2:19:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 1404727162292, timestamp = 1404727161992, arrival = 0, brokerInTime = 1404727161992, brokerOutTime = 1404727161993, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@3f96ee, marshalledProperties = org.apache.activemq.util.ByteSequence@ce16ad, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=WS1_pointage, Sujet=getListTemplateSupervision}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Subject = getListTemplateSupervision
+MessageController :: Passage par route ObjectMessage :ActiveMQObjectMessage {commandId = 59, responseRequired = false, messageId = ID:opendas-vm-54933-1404727026141-0:2:19:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-54933-1404727026141-0:2:19:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 1404727162292, timestamp = 1404727161992, arrival = 0, brokerInTime = 1404727161992, brokerOutTime = 1404727161993, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@3f96ee, marshalledProperties = org.apache.activemq.util.ByteSequence@ce16ad, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=WS1_pointage, Sujet=getListTemplateSupervision}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Message received : ServerRequest [attachement=null, fromUrl=DAS_CLIENT, sendUrl=DAS_SERVER, title=getListTemplateSupervision, sendedDate=Mon Jul 07 11:59:21 CEST 2014, previousRequest=null]
+MessageController: TITLE ====>getListTemplateSupervision
+DASConnexion:  ===== GETLTS
+DASConnexion:  ===== : []
+MessageSender: Message send having for subject: WS1_pointage
+MessageSender: Sending message: ServerRequest [attachement=[], fromUrl=DAS_SERVER, sendUrl=DAS_CLIENT, title=null, sendedDate=Mon Jul 07 11:59:21 CEST 2...
+MessageController: Passage by onMessage
+MessageController :: Passage par route Message :ActiveMQObjectMessage {commandId = 62, responseRequired = false, messageId = ID:opendas-vm-54933-1404727026141-0:2:20:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-54933-1404727026141-0:2:20:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 1404727162403, timestamp = 1404727162103, arrival = 0, brokerInTime = 1404727162104, brokerOutTime = 1404727162104, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@b1a4e2, marshalledProperties = org.apache.activemq.util.ByteSequence@c00025, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=WS1_pointage, Sujet=getListEan128}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Subject = getListEan128
+MessageController :: Passage par route ObjectMessage :ActiveMQObjectMessage {commandId = 62, responseRequired = false, messageId = ID:opendas-vm-54933-1404727026141-0:2:20:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-54933-1404727026141-0:2:20:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 1404727162403, timestamp = 1404727162103, arrival = 0, brokerInTime = 1404727162104, brokerOutTime = 1404727162104, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@b1a4e2, marshalledProperties = org.apache.activemq.util.ByteSequence@c00025, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=WS1_pointage, Sujet=getListEan128}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Message received : ServerRequest [attachement=null, fromUrl=DAS_CLIENT, sendUrl=DAS_SERVER, title=getListEan128, sendedDate=Mon Jul 07 11:59:22 CEST 2014, previousRequest=null]
+MessageController: TITLE ====>getListEan128
+MessageSender: Message send having for subject: WS1_pointage
+MessageSender: Sending message: ServerRequest [attachement=[], fromUrl=DAS_SERVER, sendUrl=DAS_CLIENT, title=null, sendedDate=Mon Jul 07 11:59:22 CEST 2...
+MessageController: Passage by onMessage
+MessageController :: Passage par route Message :ActiveMQObjectMessage {commandId = 65, responseRequired = false, messageId = ID:opendas-vm-54933-1404727026141-0:2:21:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-54933-1404727026141-0:2:21:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 1404727162515, timestamp = 1404727162215, arrival = 0, brokerInTime = 1404727162216, brokerOutTime = 1404727162216, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@b0095d, marshalledProperties = org.apache.activemq.util.ByteSequence@136d9d8, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=WS1_pointage, Sujet=getFctConfigsWithWsId}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Subject = getFctConfigsWithWsId
+MessageController :: Passage par route ObjectMessage :ActiveMQObjectMessage {commandId = 65, responseRequired = false, messageId = ID:opendas-vm-54933-1404727026141-0:2:21:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-54933-1404727026141-0:2:21:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 1404727162515, timestamp = 1404727162215, arrival = 0, brokerInTime = 1404727162216, brokerOutTime = 1404727162216, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@b0095d, marshalledProperties = org.apache.activemq.util.ByteSequence@136d9d8, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=WS1_pointage, Sujet=getFctConfigsWithWsId}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Message received : ServerRequest [attachement=1, fromUrl=DAS_CLIENT, sendUrl=DAS_SERVER, title=getFctConfigsWithWsId, sendedDate=Mon Jul 07 11:59:22 CEST 2014, previousRequest=null]
+MessageController: TITLE ====>getFctConfigsWithWsId
+DASConnexion :: getFctConfigs :1
+MessageSender: Message send having for subject: WS1_pointage
+MessageSender: Sending message: ServerRequest [attachement=[DASFunctionalConfig [mask=pointage, function_xml=<?xml version="1.0" encoding="UTF-8"?>
+<fu...
+MessageController: Passage by onMessage
+MessageController :: Passage par route Message :ActiveMQObjectMessage {commandId = 68, responseRequired = false, messageId = ID:opendas-vm-54933-1404727026141-0:2:22:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-54933-1404727026141-0:2:22:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 1404735239718, timestamp = 1404735239418, arrival = 0, brokerInTime = 1404735239418, brokerOutTime = 1404735239418, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@1dae160, marshalledProperties = org.apache.activemq.util.ByteSequence@102679a, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=WS1_pointage, Sujet=getListTemplateReport}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Subject = getListTemplateReport
+MessageController :: Passage par route ObjectMessage :ActiveMQObjectMessage {commandId = 68, responseRequired = false, messageId = ID:opendas-vm-54933-1404727026141-0:2:22:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-54933-1404727026141-0:2:22:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 1404735239718, timestamp = 1404735239418, arrival = 0, brokerInTime = 1404735239418, brokerOutTime = 1404735239418, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@1dae160, marshalledProperties = org.apache.activemq.util.ByteSequence@102679a, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=WS1_pointage, Sujet=getListTemplateReport}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Message received : ServerRequest [attachement=null, fromUrl=DAS_CLIENT, sendUrl=DAS_SERVER, title=getListTemplateReport, sendedDate=Mon Jul 07 14:13:59 CEST 2014, previousRequest=null]
+MessageController: TITLE ====>getListTemplateReport
+DASConnexion:  ===== GETLTP
+DASConnexion:  ===== : [DASDataModel [id=1, name=report5, template=<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<parameter name="NOM_MORCEAU" class="java.lang.String"/>
+	<parameter name="NUM_SSCC" class="java.lang.String"/>
+	<parameter name="NUM_ARTICLE" class="java.lang.Integer"/>
+	<parameter name="NUM_LOT" class="java.lang.String"/>
+	
+	<title>
+		<band height="802" splitType="Prevent">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="20"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Boucherie Factice OpenAgro - 9 rue Alfred Kastler - 44300 Nantes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="179" width="142" height="18"/>
+				<box rightPadding="0"/>
+				<textElement textAlignment="Right">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Date d'emballage :]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Opaque" x="0" y="83" width="555" height="20" forecolor="#FFFFFF" backcolor="#000000"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Code Article : " + $P{NUM_ARTICLE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="205" y="179" width="370" height="18"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="197" width="142" height="18"/>
+				<box rightPadding="0"/>
+				<textElement textAlignment="Right">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[N° Sanitel :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="205" y="197" width="370" height="18"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{NUM_LOT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="63" width="555" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{NOM_MORCEAU}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement mode="Opaque" x="117" y="116" width="396" height="49"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39 (Extended)" drawText="true" checksumRequired="false" evaluationTime="Report">
+					<jr:codeExpression><![CDATA[$P{NUM_SSCC}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<image>
+				<reportElement mode="Transparent" x="0" y="20" width="142" height="63"/>
+				<imageExpression class="java.lang.String"><![CDATA[System.getProperty("user.dir")+"/ressources/openAgro5a_p.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="417" y="20" width="138" height="63"/>
+				<imageExpression class="java.lang.String"><![CDATA[System.getProperty("user.dir")+"/ressources/logo_EVA.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+</jasperReport>]]
+MessageSender: Message send having for subject: WS1_pointage
+MessageSender: Sending message: ServerRequest [attachement=[DASDataModel [id=1, name=report5, template=<?xml version="1.0" encoding="UTF-8"?>
+<jasperRe...
+MessageController: Passage by onMessage
+MessageController :: Passage par route Message :ActiveMQObjectMessage {commandId = 71, responseRequired = false, messageId = ID:opendas-vm-54933-1404727026141-0:2:23:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-54933-1404727026141-0:2:23:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 1404735239829, timestamp = 1404735239529, arrival = 0, brokerInTime = 1404735239530, brokerOutTime = 1404735239530, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@3bc1a1, marshalledProperties = org.apache.activemq.util.ByteSequence@12549c4, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=WS1_pointage, Sujet=getListTemplateSupervision}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Subject = getListTemplateSupervision
+MessageController :: Passage par route ObjectMessage :ActiveMQObjectMessage {commandId = 71, responseRequired = false, messageId = ID:opendas-vm-54933-1404727026141-0:2:23:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-54933-1404727026141-0:2:23:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 1404735239829, timestamp = 1404735239529, arrival = 0, brokerInTime = 1404735239530, brokerOutTime = 1404735239530, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@3bc1a1, marshalledProperties = org.apache.activemq.util.ByteSequence@12549c4, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=WS1_pointage, Sujet=getListTemplateSupervision}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Message received : ServerRequest [attachement=null, fromUrl=DAS_CLIENT, sendUrl=DAS_SERVER, title=getListTemplateSupervision, sendedDate=Mon Jul 07 14:13:59 CEST 2014, previousRequest=null]
+MessageController: TITLE ====>getListTemplateSupervision
+DASConnexion:  ===== GETLTS
+DASConnexion:  ===== : []
+MessageSender: Message send having for subject: WS1_pointage
+MessageSender: Sending message: ServerRequest [attachement=[], fromUrl=DAS_SERVER, sendUrl=DAS_CLIENT, title=null, sendedDate=Mon Jul 07 14:13:59 CEST 2...
+MessageController: Passage by onMessage
+MessageController :: Passage par route Message :ActiveMQObjectMessage {commandId = 74, responseRequired = false, messageId = ID:opendas-vm-54933-1404727026141-0:2:24:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-54933-1404727026141-0:2:24:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 1404735239941, timestamp = 1404735239641, arrival = 0, brokerInTime = 1404735239641, brokerOutTime = 1404735239641, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@1dcc4cd, marshalledProperties = org.apache.activemq.util.ByteSequence@fc8e75, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=WS1_pointage, Sujet=getListEan128}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Subject = getListEan128
+MessageController :: Passage par route ObjectMessage :ActiveMQObjectMessage {commandId = 74, responseRequired = false, messageId = ID:opendas-vm-54933-1404727026141-0:2:24:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-54933-1404727026141-0:2:24:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 1404735239941, timestamp = 1404735239641, arrival = 0, brokerInTime = 1404735239641, brokerOutTime = 1404735239641, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@1dcc4cd, marshalledProperties = org.apache.activemq.util.ByteSequence@fc8e75, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=WS1_pointage, Sujet=getListEan128}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Message received : ServerRequest [attachement=null, fromUrl=DAS_CLIENT, sendUrl=DAS_SERVER, title=getListEan128, sendedDate=Mon Jul 07 14:13:59 CEST 2014, previousRequest=null]
+MessageController: TITLE ====>getListEan128
+MessageSender: Message send having for subject: WS1_pointage
+MessageSender: Sending message: ServerRequest [attachement=[], fromUrl=DAS_SERVER, sendUrl=DAS_CLIENT, title=null, sendedDate=Mon Jul 07 14:13:59 CEST 2...
+MessageController: Passage by onMessage
+MessageController :: Passage par route Message :ActiveMQObjectMessage {commandId = 77, responseRequired = false, messageId = ID:opendas-vm-54933-1404727026141-0:2:25:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-54933-1404727026141-0:2:25:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 1404735240054, timestamp = 1404735239754, arrival = 0, brokerInTime = 1404735239754, brokerOutTime = 1404735239755, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@1d1082f, marshalledProperties = org.apache.activemq.util.ByteSequence@705d28, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=WS1_pointage, Sujet=getFctConfigsWithWsId}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Subject = getFctConfigsWithWsId
+MessageController :: Passage par route ObjectMessage :ActiveMQObjectMessage {commandId = 77, responseRequired = false, messageId = ID:opendas-vm-54933-1404727026141-0:2:25:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-54933-1404727026141-0:2:25:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 1404735240054, timestamp = 1404735239754, arrival = 0, brokerInTime = 1404735239754, brokerOutTime = 1404735239755, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@1d1082f, marshalledProperties = org.apache.activemq.util.ByteSequence@705d28, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=WS1_pointage, Sujet=getFctConfigsWithWsId}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Message received : ServerRequest [attachement=1, fromUrl=DAS_CLIENT, sendUrl=DAS_SERVER, title=getFctConfigsWithWsId, sendedDate=Mon Jul 07 14:13:59 CEST 2014, previousRequest=null]
+MessageController: TITLE ====>getFctConfigsWithWsId
+DASConnexion :: getFctConfigs :1
+MessageSender: Message send having for subject: WS1_pointage
+MessageSender: Sending message: ServerRequest [attachement=[DASFunctionalConfig [mask=pointage, function_xml=<?xml version="1.0" encoding="UTF-8"?>
+<fu...
+MessageController: Passage by onMessage
+MessageController :: Passage par route Message :ActiveMQObjectMessage {commandId = 80, responseRequired = false, messageId = ID:opendas-vm-54933-1404727026141-0:2:26:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-54933-1404727026141-0:2:26:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 1404735249982, timestamp = 1404735249682, arrival = 0, brokerInTime = 1404735249682, brokerOutTime = 1404735249683, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@11710be, marshalledProperties = org.apache.activemq.util.ByteSequence@14c4d61, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=WS1_pointage, Sujet=getDataModelWithId}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Subject = getDataModelWithId
+MessageController :: Passage par route ObjectMessage :ActiveMQObjectMessage {commandId = 80, responseRequired = false, messageId = ID:opendas-vm-54933-1404727026141-0:2:26:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-54933-1404727026141-0:2:26:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 1404735249982, timestamp = 1404735249682, arrival = 0, brokerInTime = 1404735249682, brokerOutTime = 1404735249683, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@11710be, marshalledProperties = org.apache.activemq.util.ByteSequence@14c4d61, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=WS1_pointage, Sujet=getDataModelWithId}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Message received : ServerRequest [attachement=persoin, fromUrl=DAS_CLIENT, sendUrl=DAS_SERVER, title=getDataModelWithId, sendedDate=Mon Jul 07 14:14:09 CEST 2014, previousRequest=null]
+MessageController: TITLE ====>getDataModelWithId
+MessageSender: Message send having for subject: WS1_pointage
+MessageSender: Sending message: ServerRequest [attachement=DASDataModel [id=75, name=Personnel, source=das_generic, ctrl=alpha, type=D, fct_name=null, t...
+MessageController: Passage by onMessage
+MessageController :: Passage par route Message :ActiveMQObjectMessage {commandId = 5, responseRequired = false, messageId = ID:opendas-vm-53318-1404735254145-0:0:1:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-53318-1404735254145-0:0:1:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 0, timestamp = 1404735254419, arrival = 0, brokerInTime = 1404735254419, brokerOutTime = 1404735254420, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@191777e, marshalledProperties = org.apache.activemq.util.ByteSequence@13c2d7f, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=SET, Sujet=getSubjectList}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Subject = getSubjectList
+MessageController :: Passage par route ObjectMessage :ActiveMQObjectMessage {commandId = 5, responseRequired = false, messageId = ID:opendas-vm-53318-1404735254145-0:0:1:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:opendas-vm-53318-1404735254145-0:0:1:1, destination = queue://DAS_SERVER, transactionId = null, expiration = 0, timestamp = 1404735254419, arrival = 0, brokerInTime = 1404735254419, brokerOutTime = 1404735254420, correlationId = null, replyTo = null, persistent = false, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@191777e, marshalledProperties = org.apache.activemq.util.ByteSequence@13c2d7f, dataStructure = null, redeliveryCounter = 0, size = 0, properties = {Station=SET, Sujet=getSubjectList}, readOnlyProperties = true, readOnlyBody = true, droppable = false}
+MessageController: Message received : ServerRequest [attachement=null, fromUrl=TALEND, sendUrl=DAS_SERVER, title=getSubjectList, sendedDate=Mon Jul 07 14:14:14 CEST 2014, previousRequest=null]
+MessageController: TITLE ====>getSubjectList
+MessageController :: ConsumConfig :pointage_changement_dossier
+MessageController :: ConsumConfig :pointage_aleas_maintenance
+MessageController :: ConsumConfig :pointage_controle_iso
+MessageController :: ConsumConfig :pointage_entree_sortie
+MessageController :: ConsumConfig :entree
+MessageController :: ConsumConfig :sortie
+MessageController :: ConsumConfig :controle_de_livraison_asperpgi
+MessageController :: ConsumConfig :controle_de_livraison_magento
+MessageController :: ConsumConfig :pointage
+MessageController :: ConsumConfig :tracking_asperpgi
+MessageController :: ConsumConfig :delete_asperpgi
+MessageController :: ConsumConfig :pointage_changement_poste
+MessageController :: ConsumConfig :entree_scenario2
+MessageController :: ConsumConfig :entree_scenario3
+MessageController :: ConsumConfig :pointage_scenario2
+MessageController :: ConsumConfig :pointage_scenario3
+MessageController :: ConsumConfig :sortie_scenario2
+MessageController :: ConsumConfig :sortie_scenario3
+MessageController :: ConsumConfig :sortie_poste
+MessageController :: ConsumConfig :entree_poste
+MessageSender: Message send having for subject: SET
+MessageSender: Sending message: ServerRequest [attachement=[pointage_changement_dossier, pointage_aleas_maintenance, pointage_controle_iso, pointage_ent...
