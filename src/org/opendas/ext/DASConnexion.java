@@ -325,22 +325,18 @@ public class DASConnexion implements DASIDataAccess {
 	}
 	
 
-	@Override
 	public DASWorkstation getWorkstationWithId(String workstation_id) {
 		return getWorkstation(workstation_id);
 	}
 
-	@Override
 	public List<DASGeneric> getWsGenericsWithId(String workstation_id) {
 		return getGenerics0(workstation_id);
 	}
 	
-	@Override
 	public List<DASGeneric> getWsGenericsWithIdOrWithout(String workstation_id) {
 		return getGenerics1(workstation_id);
 	}
 	
-	@Override
 	public List<DASFunctionalConfig> getFctConfigsWithWsId(String workstation_code) {
 		return getFctConfigs(workstation_code);
 	}

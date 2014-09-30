@@ -1,17 +1,17 @@
 10
 
 dir
-132
-http://opendas.org/svn/opendas/server/trunk/bin
+138
+http://opendas.org/svn/opendas/server/trunk/src
 http://opendas.org/svn/opendas
 
 
 
-2011-06-27T11:51:45.917612Z
-5
+2011-10-25T14:47:53.502624Z
+138
+halgandd
 
-has-props
-has-prop-mods
+
 
 
 
@@ -25,4 +25,50 @@ has-prop-mods
 
 
 93be8e6f-117f-4c88-994c-96279cb05bf6
+
+META-INF
+dir
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://opendas.org/svn/opendas/server/trunk/src/META-INF
+43
+
+org
+dir
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://opendas.org/svn/opendas/server/trunk/src/org
+43
 

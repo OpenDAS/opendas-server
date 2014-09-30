@@ -33,7 +33,6 @@ public class DASResponseListener implements javax.jms.MessageListener {
 	/** Time elapsed */
 	private int timeElapsed;
 
-	@Override
 	public void onMessage(Message message) {
 
 		// log("Message received (client) ");

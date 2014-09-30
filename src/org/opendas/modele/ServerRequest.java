@@ -40,7 +40,7 @@ public class ServerRequest implements Serializable {
 	 * If this request follow in a demand, it puts the initial request in the response
 	 * 
 	 */
-	
+
 	private ServerRequest previousRequest;
 
 	public ServerRequest() {
