@@ -41,9 +41,9 @@
         <mkdir dir="${build.classes.dir}"/>
         <javac srcdir="${src.dir}" destdir="${build.classes.dir}" classpathref="build.classpath" includeantruntime="false" source="5" target="5"/>
     </target>
-	
+
     <target name="jars" depends="compile">
-        <jar jarfile="${build.jars.dir}/das_server.jar">
+        <jar jarfile="${build.jars.dir}/opendas-server.jar">
             <fileset dir="${build.classes.dir}">
                 <include name="**/*.class"/>
             </fileset>
