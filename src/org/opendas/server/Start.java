@@ -13,8 +13,8 @@ public class Start {
 				ServerLog.log("Start","OpenDAS Server starts with configuration file: " + args[0]);
 			}
 			else { 
-				ServerLoader.getInstance("./config/das_server.conf");
-				ServerLog.log("Start","OpenDAS Server starts with default configuration file: ./config/das_server.conf");
+				ServerLoader.getInstance("./config/opendas-server.conf");
+				ServerLog.log("Start","OpenDAS Server starts with default configuration file: ./config/opendas-server.conf");
 			}
 		
 		}catch(Exception ex){

@@ -178,32 +178,18 @@ public class DASConnexion implements DASIDataAccess {
 	 * @return workstation functional configurations which of the code has been given in parameter
 	 */
 
-	@SuppressWarnings("unchecked")
 	private List<DASFunctionalConfig> getFctConfigs(String workstation_code) {
 			
 		Query query = this.em.createQuery("SELECT w.functional_configurations FROM DASWorkstation w "
 				+ "WHERE w.code = :workstation_code");
 		query.setParameter("workstation_code", workstation_code);	
-		query.setHint("toplink.refresh", "true");
+		//query.setHint("toplink.refresh", "true");
 		
 		List<DASFunctionalConfig> functionalConfigs = query.getResultList();
 		
 		return functionalConfigs;
 	}
-	
-	//TODO Suite a changement BDD, transformer la récupération de FctConfig comme GraphConfig
-//	Query query = this.em.createQuery("SELECT fg FROM DASFunctionalConfig fg "
-//			+ "WHERE fg.mask = :mask");
-//	
-//	query.setParameter("mask", "M5B_Pointage");
-//
-//	List<DASFunctionalConfig> fctConfig = (List<DASFunctionalConfig>) query.getResultList();
-//	return fctConfig;
-	
-//	List<DASWorkstation> w = (List<DASWorkstation>) query.getResultList();
 
-	
-	@SuppressWarnings("unchecked")
 	private List<DASGraphicalConfig> getGraphConfigs(String workstation_code) {
 		
 		Query query = this.em.createQuery("SELECT w.graphical_configurations FROM DASWorkstation w "

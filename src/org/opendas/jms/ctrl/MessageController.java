@@ -196,6 +196,13 @@ public class MessageController implements MessageListener {
 			String workstation_code = (String) serverRequest.getAttachement();
 			List<DASFunctionalConfig> fctConfigs = this.conn.getFctConfigsWithWsId(workstation_code);
 
+			System.out.println("count fctConfigs :"+ fctConfigs.size() + " station :"+ station);
+
+			for(DASFunctionalConfig config : fctConfigs){
+				System.out.println(config.toString());
+			}
+			
+			
 			sendResponse(serverRequest, (Serializable)fctConfigs, station);
 
 		} else if ("getGraphConfigsWithWsId".equals(title)) {
@@ -229,6 +236,8 @@ public class MessageController implements MessageListener {
 	private void sendResponse(ServerRequest serverRequest, Serializable attachement, String station) {
 		ServerRequest response = new ServerRequest(serverRequest);
 		response.setAttachement(attachement);
+		
+		System.out.println("sendUrl : "+response.getSendUrl()+ " station :"+ station);
 		this.messageSender.setSubject(response.getSendUrl());
 		this.messageSender.send(response, station);
 	}	
