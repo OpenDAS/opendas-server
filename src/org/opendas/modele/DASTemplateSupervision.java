@@ -27,7 +27,7 @@ public class DASTemplateSupervision implements Serializable {
 	private Integer nb_case_y;
 	private Integer width_case;
 	private Integer height_case;
-	private byte[] image;
+	private String image;
 	
 	public Integer getId() {
 		return id;
@@ -90,11 +90,11 @@ public class DASTemplateSupervision implements Serializable {
 	}
 
 
-	public byte[] getImage() {
+	public String getImage() {
 		return image;
 	}
 
-	public void setImage(byte[] image) {
+	public void setImage(String image) {
 		this.image = image;
 	}
 
