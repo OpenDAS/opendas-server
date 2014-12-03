@@ -16,6 +16,7 @@
             <include name="postgresql-8.4-701.jdbc4.jar"/>
             <include name="toplink-essentials-agent.jar"/>
             <include name="toplink-essentials.jar"/>
+        	<include name="log4j-1.2.13.jar"/>
         	<include name="log4j-over-slf4j-1.5.4.jar"/>
         	<include name="slf4j-simple-1.5.4.jar"/>
         </fileset>
@@ -27,6 +28,7 @@
 		<mkdir dir="${build.dir}/META-INF"/>
         <copy file="${lib.dir}/activemq-all-5.5.0.jar" todir="${build.lib.dir}"/>
         <copy file="${lib.dir}/activemq-core-5.5.0.jar" todir="${build.lib.dir}"/>
+		<copy file="${lib.dir}/log4j-1.2.13.jar" todir="${build.lib.dir}"/>
 		<copy file="${lib.dir}/log4j-over-slf4j-1.5.4.jar" todir="${build.lib.dir}"/>
 		<copy file="${lib.dir}/slf4j-simple-1.5.4.jar" todir="${build.lib.dir}"/>
         <copy file="${lib.dir}/postgresql-8.4-701.jdbc4.jar" todir="${build.lib.dir}"/>
@@ -49,7 +51,7 @@
             </fileset>
             <manifest>
                 <attribute name="Main-Class" value="org.opendas.server.Start"/>
-                <attribute name="Class-Path" value=". lib/activemq-all-5.5.0.jar lib/activemq-core-5.5.0.jar lib/log4j-over-slf4j-1.5.4.jar lib/slf4j-simple-1.5.4.jar lib/postgresql-8.4-701.jdbc4.jar lib/toplink-essentials.jar lib/toplink-essentials-agent.jar "/>
+                <attribute name="Class-Path" value=". lib/activemq-all-5.5.0.jar lib/activemq-core-5.5.0.jar lib/log4j-1.2.13.jar lib/log4j-over-slf4j-1.5.4.jar lib/slf4j-simple-1.5.4.jar lib/postgresql-8.4-701.jdbc4.jar lib/toplink-essentials.jar lib/toplink-essentials-agent.jar "/>
             </manifest>
         </jar>
     </target>
