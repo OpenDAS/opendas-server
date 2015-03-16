@@ -18,15 +18,15 @@ import org.opendas.modele.DASWorkstation;
 
 public interface DASIDataAccess {
 
-	public DASWorkstation getWorkstationWithId(String workstation_id);
+	public DASWorkstation getWorkstationWithId(String workstation_code);
 	
-	public List<DASGeneric> getWsGenericsWithId(String workstation_id);
+	public List<DASGeneric> getWsGenericsWithId(String workstation_code);
 	
-	public List<DASGeneric> getWsGenericsWithIdOrWithout(String workstation_id);
+	public List<DASGeneric> getWsGenericsWithIdOrWithout(String workstation_code);
 
-	public List<DASFunctionalConfig> getFctConfigsWithWsId(String mask);
+	public DASFunctionalConfig getFctConfigsWithWsId(String workstation_code,String mask);
 	
-	public List<DASGraphicalConfig> getGraphConfigsWithWsId(String workstation_id);
+	public DASGraphicalConfig getGraphConfigsWithWsId(String workstation_code,String mask);
 	
 	public DASDataModel getDataModelWithId(String id);
 

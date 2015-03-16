@@ -97,7 +97,7 @@ public class DASConnexion implements DASIDataAccess {
 	
 	/**
 	 * Get back coresponding object at the workstation
-	 * @param workstation_id
+	 * @param workstation_code
 	 * @return
 	 */
 	
@@ -117,16 +117,16 @@ public class DASConnexion implements DASIDataAccess {
 
 	/**
 	 * Get back coresponding object at the workstation and objects by default
-	 * @param workstation_id
+	 * @param workstation_code
 	 * @return
 	 */
 
 	@SuppressWarnings("unchecked")
 	private List<DASGeneric> getGenerics1(String workstation_code) {
 		
-		//TODO Voir comment la selection des generics n'ayant pas de workstation_id est possible
+		//TODO Voir comment la selection des generics n'ayant pas de workstation_code est possible
 //		Query query = this.em.createQuery("SELECT g FROM DASGeneric g "
-//			+ "WHERE g.workstation_id IS NULL "
+//			+ "WHERE g.workstation_code IS NULL "
 //			+ "or g.workstation.code = :code");
 //
 //		query.setParameter("code", workstation_code);
@@ -178,7 +178,7 @@ public class DASConnexion implements DASIDataAccess {
 	 * @return workstation functional configurations which of the code has been given in parameter
 	 */
 
-	private List<DASFunctionalConfig> getFctConfigs(String workstation_code) {
+	private DASFunctionalConfig getFctConfigs(String workstation_code,String mask) {
 			
 		Query query = this.em.createQuery("SELECT w.functional_configurations FROM DASWorkstation w "
 				+ "WHERE w.code = :workstation_code");
@@ -186,30 +186,45 @@ public class DASConnexion implements DASIDataAccess {
 		//query.setHint("toplink.refresh", "true");
 		
 		List<DASFunctionalConfig> functionalConfigs = query.getResultList();
-		
-		return functionalConfigs;
+		DASFunctionalConfig functionalConfig = null;
+
+		for(DASFunctionalConfig funcConf : functionalConfigs){
+			if(funcConf.getMask().equals(mask)){
+				functionalConfig = funcConf;
+				break;
+			}
+		}
+		return functionalConfig;
 	}
 
-	private List<DASGraphicalConfig> getGraphConfigs(String workstation_code) {
+	private DASGraphicalConfig getGraphConfigs(String workstation_code,String mask) {
 		
 		Query query = this.em.createQuery("SELECT w.graphical_configurations FROM DASWorkstation w "
 				+ "WHERE w.code = :workstation_code");
 		query.setParameter("workstation_code", workstation_code);
 
 		List<DASGraphicalConfig> graphicConfigs = query.getResultList();
+		DASGraphicalConfig graphicalConfig = null;
+
+		for(DASGraphicalConfig graphConf : graphicConfigs){
+			if(graphConf.getMask().equals(mask)){
+				graphicalConfig = graphConf;
+				break;
+			}
+		}
 		
-		return graphicConfigs;
+		return graphicalConfig;
 	}
 	
 	private DASDataModel getDataModel(String dataModelCode) {
-		Query query = this.em.createQuery("SELECT dm FROM DASDataModel dm "
-				+ "WHERE dm.code = :code");
+		Query query = this.em.createQuery("SELECT dm FROM DASDataModel dm " + "WHERE dm.code = :code");
 
 		query.setParameter("code", dataModelCode);
 
 		DASDataModel dataModel = null;
 		try {
 			dataModel = (DASDataModel) query.getSingleResult();
+			System.out.println("DATA MODEL :"+dataModel.toString());
 		} catch (NoResultException e) {
 			ServerLog.logDebug(instance.getClass().getSimpleName(),"data model '" + dataModelCode + "' unknown");
 		}
@@ -311,24 +326,25 @@ public class DASConnexion implements DASIDataAccess {
 	}
 	
 
-	public DASWorkstation getWorkstationWithId(String workstation_id) {
-		return getWorkstation(workstation_id);
+	public DASWorkstation getWorkstationWithId(String workstation_code) {
+		return getWorkstation(workstation_code);
 	}
 
-	public List<DASGeneric> getWsGenericsWithId(String workstation_id) {
-		return getGenerics0(workstation_id);
+	public List<DASGeneric> getWsGenericsWithId(String workstation_code) {
+		return getGenerics0(workstation_code);
 	}
 	
-	public List<DASGeneric> getWsGenericsWithIdOrWithout(String workstation_id) {
-		return getGenerics1(workstation_id);
+	public List<DASGeneric> getWsGenericsWithIdOrWithout(String workstation_code) {
+		return getGenerics1(workstation_code);
 	}
 	
-	public List<DASFunctionalConfig> getFctConfigsWithWsId(String workstation_code) {
-		return getFctConfigs(workstation_code);
+	public DASFunctionalConfig getFctConfigsWithWsId(String workstation_code,
+			String mask) {
+		return getFctConfigs(workstation_code,mask);
 	}
 	
-	public List<DASGraphicalConfig> getGraphConfigsWithWsId(String workstation_id) {
-		return getGraphConfigs(workstation_id);
+	public DASGraphicalConfig getGraphConfigsWithWsId(String workstation_code,String mask) {
+		return getGraphConfigs(workstation_code,mask);
 	}
 	
 	public DASDataModel getDataModelWithId(String id) {
@@ -380,7 +396,7 @@ public class DASConnexion implements DASIDataAccess {
 				+ "ON mod.code = conf.model_material_id "
 				+ "JOIN DAS_TYPE_MATERIAL type "
 				+ "ON type.code = mod.type_material_id "
-				+ "WHERE conf.workstation_id = '" + dasWorkstation.getCode()
+				+ "WHERE conf.workstation_code = '" + dasWorkstation.getCode()
 				+ "';";
 
 		PreparedStatement stmtCategorie;

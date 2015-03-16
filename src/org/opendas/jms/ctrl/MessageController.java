@@ -83,40 +83,7 @@ public class MessageController implements MessageListener {
 		
 		String title = serverRequest.getTitle();
 		ServerLog.log(this.getClass().getSimpleName(),"TITLE ====>"+title);
-//		if ("getListeArticlesAvecProvenance".equals(title)) {
-//
-//			int id = (Integer) serverRequest.getAttachement();
-//
-//			List<DASArticle> list = this.conn.RecupListeArticlesAvecProvenance(id);
-//
-//			sendResponse(serverRequest, (Serializable) list, station);
-//
-//		} else if ("getArticleAvecId".equals(title)) {
-//
-//			int id = (Integer) serverRequest.getAttachement();
-//
-//			DASArticle article = this.conn.RecupArticleAvecId(id);
-//
-//			sendResponse(serverRequest, article, station);
-//
-//		} else if ("getLotAvecSSCC".equals(title)) {
-//
-//			String id_sscc = (String) serverRequest.getAttachement();
-//
-//			DASSscc lot = this.conn.RecupLotAvecSSCC(id_sscc);
-//
-//			sendResponse(serverRequest, lot, station);
-//
-//		} else 
-//		if ("getChaineParser".equals(title)) {
-//
-//			DASWorkstation d = new DASWorkstation();
-//			d.setId((String)serverRequest.getAttachement());
-//			String chaine = this.conn.recupChaineParser(d);
-//
-//			sendResponse(serverRequest, chaine, station);
-//
-//		} else 
+ 
 		if ("getWsConfig_workstationID".equals(title)) {
 
 			String idWorkStation = (String) serverRequest.getAttachement();
@@ -156,12 +123,6 @@ public class MessageController implements MessageListener {
 
 			sendResponse(serverRequest, (Serializable)listDM, station);
 
-//		} else if ("getBalancesAvecWs".equals(title)) {
-//
-//			String workstation_id = (String) serverRequest.getAttachement();
-//			List<DASBalance> balances = this.conn.RecupBalancesAvecWs(workstation_id);
-//
-//			sendResponse(serverRequest, (Serializable)balances, station);
 
 		} else if ("getWorkstationWithId".equals(title)) {
 
@@ -169,13 +130,6 @@ public class MessageController implements MessageListener {
 			DASWorkstation workstation = this.conn.getWorkstationWithId(workstation_id);
 
 			sendResponse(serverRequest, workstation, station);
-
-//		} else if ("getWsArticlesAvecId".equals(title)) {
-//
-//			String workstation_id = (String) serverRequest.getAttachement();
-//			List<DASWorkstationArticle> wsArticles = this.conn.RecupWsArticlesAvecId(workstation_id);
-//
-//			sendResponse(serverRequest, (Serializable)wsArticles, station);
 
 		} else if ("getWsGenericsAvecId".equals(title)) {
 
@@ -193,24 +147,21 @@ public class MessageController implements MessageListener {
 		
 		} else if ("getFctConfigsWithWsId".equals(title)) {
 
-			String workstation_code = (String) serverRequest.getAttachement();
-			List<DASFunctionalConfig> fctConfigs = this.conn.getFctConfigsWithWsId(workstation_code);
+			@SuppressWarnings("unchecked")
+			List<String> parameters = (List<String>)serverRequest.getAttachement();		
+			DASFunctionalConfig config =  this.conn.getFctConfigsWithWsId(parameters.get(0),parameters.get(1));
 
-			System.out.println("count fctConfigs :"+ fctConfigs.size() + " station :"+ station);
-
-			for(DASFunctionalConfig config : fctConfigs){
-				System.out.println(config.toString());
-			}
+			System.out.println(config.toString());
 			
-			
-			sendResponse(serverRequest, (Serializable)fctConfigs, station);
+			sendResponse(serverRequest, (Serializable)config, station);
 
 		} else if ("getGraphConfigsWithWsId".equals(title)) {
 
-			String workstation_id = (String) serverRequest.getAttachement();
-			List<DASGraphicalConfig> graphConfigs = this.conn.getGraphConfigsWithWsId(workstation_id);
+			@SuppressWarnings("unchecked")
+			List<String> parameters = (List<String>)serverRequest.getAttachement();
+			DASGraphicalConfig graphConfig = this.conn.getGraphConfigsWithWsId(parameters.get(0),parameters.get(1));
 
-			sendResponse(serverRequest, (Serializable)graphConfigs, station);
+			sendResponse(serverRequest, (Serializable)graphConfig, station);
 
 		} else if ("getDataModelWithId".equals(title)) {
 			
