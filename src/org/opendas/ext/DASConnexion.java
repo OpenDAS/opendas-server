@@ -125,36 +125,9 @@ public class DASConnexion implements DASIDataAccess {
 	private List<DASGeneric> getGenerics1(String workstation_code) {
 		
 		//TODO Voir comment la selection des generics n'ayant pas de workstation_code est possible
-//		Query query = this.em.createQuery("SELECT g FROM DASGeneric g "
-//			+ "WHERE g.workstation_code IS NULL "
-//			+ "or g.workstation.code = :code");
-//
-//		query.setParameter("code", workstation_code);
-//		
-//		List<DASGeneric> generics = query.getResultList();
-			
-//		Session session = ((EntityManagerImpl) em).getSession();
-//		List gen = session.readAllObjects(DASGeneric.class);
-		
-		//System.out.println("gen : "+gen);
-
-//		session.getIdentityMapAccessor().invalidateClass(DASGeneric.class,false);
-//		List gen2 = session.readAllObjects(DASGeneric.class);
-//		System.out.println("gen : "+gen);
 
 		ServerLog.logDebug(instance.getClass().getSimpleName(),"GET GENERICS ##");
 		Query query = this.em.createQuery("SELECT g FROM DASGeneric g ");
-
-//		List gen = session.readAllObjects(DASGeneric.class);
-//		for(Object i : gen){
-//			session.refreshObject(i);
-//		}
-		
-		//session.refreshObject(fct_con);
-		//session.refreshObject(DASGeneric.class);
-
-		//System.out.println("SESSION :"+session);
-		//System.out.println("fct_con :"+fct_con);
 
 	    query.setHint("toplink.refresh", "true");
 		

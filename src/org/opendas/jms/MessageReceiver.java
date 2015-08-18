@@ -93,7 +93,6 @@ public class MessageReceiver implements ExceptionListener{
 			replyProducer = session.createProducer(null);
 			replyProducer.setDeliveryMode(DeliveryMode.NON_PERSISTENT);
 			consumer = session.createConsumer(destination, sujetFormate);
-			// consumer = session.createConsumer(destination);
 			consumer.setMessageListener(this.getListener());
 
 			

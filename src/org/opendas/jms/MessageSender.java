@@ -44,8 +44,7 @@ import org.opendas.server.ServerLog;
 public class MessageSender {
 
 	private Destination destination;
-	// private int messageCount = 10;
-	// private long sleepTime;
+
 	private boolean verbose;
 
 	private long timeToLive;
@@ -317,23 +316,7 @@ public class MessageSender {
 	 * @throws TimeoutException 
 	 */
 	public ServerRequest sendSync(ServerRequest serverRequest, String sujet, String station) throws TimeoutException {
-//		// TODO change that (properties parameter) (Destination object)
-//		// set the parameters
-//		serverRequest.setFromUrl("temp");
-//		serverRequest.setSendUrl("temp");
-//		System.out.println("----------------------sujet-------"+sujet+"   "+station);
-//		// send the message
-//		this.send(serverRequest, sujet, station);
-//
-//		// get the message receiver
-//		MessageReceiver mr = MessageReceiver.getInstance();
-//		System.out.println("----------------------MessageSender-------"+this.getSubject());
-//		System.out.println("----------------------MessageReceiver-------"+mr.getSubject());
-//
-//		DASResponseListener listener = (DASResponseListener) mr.getListener();
-//
-//		// wait for the response and return it
-//		return listener.getResponse(serverRequest);
+
 		MessageReceiver mr = MessageReceiver.getInstance();
 		serverRequest.setFromUrl(mr.getSubject());
 		serverRequest.setSendUrl(this.getSubject());

@@ -35,8 +35,6 @@ public class DASResponseListener implements javax.jms.MessageListener {
 
 	public void onMessage(Message message) {
 
-		// log("Message received (client) ");
-
 		ObjectMessage om = (ObjectMessage) message;
 
 		ServerRequest sr = null;
@@ -147,9 +145,6 @@ public class DASResponseListener implements javax.jms.MessageListener {
 
 			if (this.listResponse.size() > 0) {
 
-//				log("size : " + this.listResponse.size());
-
-				// log("i : " + i + " taille : " + listResponse.size());
 				ServerRequest initialRequest = null;
 				try {
 					ServerRequest temp = this.listResponse.get(i);
