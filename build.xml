@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<project name="das_server" default="jars">
+<project name="opendas-server" default="sign">
 
     <property name="version" value="1"/>
     <property name="src.dir" value="${basedir}/src"/>
@@ -26,6 +26,8 @@
 		<mkdir dir="${build.jars.dir}"/>
         <mkdir dir="${build.lib.dir}"/>
 		<mkdir dir="${build.dir}/META-INF"/>
+        <mkdir dir="${build.dir}/key"/>
+        <copy file="./key/das.store" todir="./bin/key"/>
         <copy file="${lib.dir}/activemq-all-5.5.0.jar" todir="${build.lib.dir}"/>
         <copy file="${lib.dir}/activemq-core-5.5.0.jar" todir="${build.lib.dir}"/>
 		<copy file="${lib.dir}/log4j-1.2.13.jar" todir="${build.lib.dir}"/>
@@ -36,12 +38,11 @@
         <copy file="${lib.dir}/toplink-essentials-agent.jar" todir="${build.lib.dir}"/>
 		<copy file="${src.dir}/META-INF/MANIFEST.MF" todir="${build.dir}/META-INF"/>
     	<copy file="${src.dir}/META-INF/persistence.xml" todir="${build.dir}/META-INF"/>
-	
 	</target>
 		
     <target name="compile" depends="prepare">
         <mkdir dir="${build.classes.dir}"/>
-        <javac srcdir="${src.dir}" destdir="${build.classes.dir}" classpathref="build.classpath" includeantruntime="false" source="5" target="5"/>
+        <javac srcdir="${src.dir}" destdir="${build.classes.dir}" classpathref="build.classpath" includeantruntime="false" source="7" target="7"/>
     </target>
 
     <target name="jars" depends="compile">
@@ -54,6 +55,10 @@
                 <attribute name="Class-Path" value=". lib/activemq-all-5.5.0.jar lib/activemq-core-5.5.0.jar lib/log4j-1.2.13.jar lib/log4j-over-slf4j-1.5.4.jar lib/slf4j-simple-1.5.4.jar lib/postgresql-8.4-701.jdbc4.jar lib/toplink-essentials.jar lib/toplink-essentials-agent.jar "/>
             </manifest>
         </jar>
+    </target>
+
+    <target name="sign" depends="jars">
+        <signjar alias="das" jar="./bin/opendas-server.jar" keypass="op@2014" keystore="./bin/key/das.store" signedjar="./bin/signed_opendas-server.jar" storepass="op@2014" />
     </target>
 
 </project>
