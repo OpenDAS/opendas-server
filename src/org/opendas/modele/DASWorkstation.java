@@ -25,11 +25,16 @@ public class DASWorkstation implements Serializable {
 	private String name;
 	private String force_pdf;
 
-	private List<DASConfigMaterial> config_ids;
-	@OneToMany(mappedBy = "workstation_id")
-	private List<DASConfigMaterial> configIds() {
-		return config_ids;
-	}
+	// private List<DASConfigMaterial> config_ids;
+	// @OneToMany(mappedBy = "workstation_id")
+	// private List<DASConfigMaterial> configIds() {
+
+	// 	for(DASConfigMaterial conf: config_ids){
+	// 		System.out.println(conf.toString());
+	// 	}
+
+	// 	return config_ids;
+	// }
 	
 	@ManyToMany
     @JoinTable(name="das_workstation_das_graphical_configuration",
@@ -50,7 +55,7 @@ public class DASWorkstation implements Serializable {
    	private List<DASFunctionalConfig> functional_configurations;
 
 	
-//  'config_ids':fields.one2many('das.config.material', 'workstation_id', 'Materials'),
+// 'config_ids':fields.one2many('das.config.material', 'workstation_id', 'Materials'),
 //	'graphical_configuration_ids': fields.many2many('das.graphical.configuration', 'workstation_graphical_configuration_rel', 'workstation_id', 'graphical_configuration_id', 'Graphical configurations'),
 //	'functional_configuration_ids': fields.many2many('das.functional.configuration', 'workstation_functional_configuration_rel', 'workstation_id', 'functional_configuration_id', 'Functional configurations'),
 	
@@ -84,7 +89,6 @@ public class DASWorkstation implements Serializable {
 			+ "code = " + code
 			+ ", name = " + name
 			+ ", force_pdf = " + force_pdf
-			+ ", config_ids = " + config_ids
 			+ "]";
 	}
 	
